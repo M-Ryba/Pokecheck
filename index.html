@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <script src="app.js"></script>
+    <title>PokéCheck</title>
+  </head>
+  <body onload="loadFirstPokemon(20)">
+    <p id="title">PokéCheck</p>
+    <div id="search-box">
+      <span id="search-title">Find Pokémon:</span>
+      <div class="search-input">
+        <input id="search-text" type="text" placeholder="Pokémon name or ID*" />
+        <button id="search-btn" type="submit" onclick="search()">Search</button>
+      </div>
+      <span>*Multiple names or IDs separated by a comma</span>
+    </div>
+    <div id="pokemon-list"></div>
+  </body>
+</html>

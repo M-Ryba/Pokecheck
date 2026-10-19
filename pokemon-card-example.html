@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js"></script>
+    <title>pokemon-card</title>
+  </head>
+  <body>
+    <!--Pokemon card example-->
+    <div class="pokemon-card">
+      <span>#0001</span>
+      <span>Bulbasaur</span>
+      <img
+        class="pokemon-img"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+        alt="Bulbasaur"
+      />
+      <label class="collapsible-label" onclick="toggleDetails(this)">
+        <input class="collapsible-toggle" type="checkbox" />
+        Details
+      </label>
+      <div class="pokemon-details">
+        <ul>
+          <li>
+            Types:
+            <ol>
+              <li>Grass</li>
+              <li>Poison</li>
+            </ol>
+          </li>
+          <li>
+            Stats:
+            <ul>
+              <li>HP: 45</li>
+              <li>Attack: 49</li>
+              <li>Defense: 49</li>
+              <li>Special Attack: 65</li>
+              <li>Special Defense: 65</li>
+              <li>Speed: 45</li>
+            </ul>
+          </li>
+          <li>Height: 7</li>
+          <li>Weight: 69</li>
+        </ul>
+      </div>
+    </div>
+    <!--Pokemon card example end-->
+  </body>
+</html>

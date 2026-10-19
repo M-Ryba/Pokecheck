@@ -1,0 +1,121 @@
+body {
+  background-image: url("img/pokeballs-bg.png");
+  overflow-y: scroll; /* Always show horizontal scrollbar */
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.2em;
+}
+
+#title {
+  margin: auto;
+  max-width: fit-content;
+  text-align: center;
+  font-size: 3em;
+  border-radius: 7px;
+  background-color: #ffcb05;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#search-box {
+  margin: auto;
+  max-width: fit-content;
+  border-radius: 7px;
+  padding: 15px;
+  background-color: rgb(35, 131, 175);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#search-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#search-input {
+  display: flex;
+  flex-direction: column;
+}
+
+#search-text {
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 7px;
+  border: 0px;
+}
+
+#search-btn {
+  padding: 10px;
+  text-align: center;
+  border-radius: 7px;
+  border: 0px;
+}
+
+#pokemon-list {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pokemon-card {
+  text-align: center;
+  width: 250px;
+  background-color: rgba(242, 242, 242, 0.9);
+  border-radius: 7px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  text-transform: capitalize;
+}
+
+.pokemon-img {
+  margin-left: auto;
+  margin-right: auto;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  width: 100%;
+}
+
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+.collapsible-toggle {
+  display: none;
+}
+
+.collapsible-label {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  color: #a77b0e;
+  background: #fae042;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.collapsible-label:hover {
+  color: #7c5a0b;
+}
+
+.pokemon-details {
+  max-height: 0vh;
+  overflow: hidden;
+  text-align: left;
+  transition: max-height 0.25s ease-in-out;
+}
+
+.error {
+  background-color: rgb(189, 24, 49);
+  font-size: 2em;
+  padding: 12px;
+  border-radius: 7px;
+}
