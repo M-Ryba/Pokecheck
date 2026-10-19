@@ -1,2 +1,2 @@
 # Pokecheck
-Pokémon browser written in JavaScript
+Pokémon browser using PokéAPI written in JavaScript
